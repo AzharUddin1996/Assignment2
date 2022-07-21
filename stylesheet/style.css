@@ -214,6 +214,7 @@ footer .sosail ul {
 }
 
 /* responsive */
+/* FOR TABLET && TAB */
 @media screen and (min-width: 768px) and (max-width: 992px) {
     #header {
         color: white;
@@ -292,6 +293,7 @@ footer .sosail ul {
 
 }
 
+/* FOR MOBILE PHONE */
 @media screen and (max-width: 767px) {
     #header {
         color: white;
@@ -309,6 +311,7 @@ footer .sosail ul {
     .player-info,
     .player-pic {
         width: 100%;
+        padding: 5px;
         padding-bottom: 10px;
         margin: 0 auto;
     }
