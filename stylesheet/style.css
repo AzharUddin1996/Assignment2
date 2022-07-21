@@ -11,6 +11,7 @@ body {
     font-family: 'Oswald', sans-serif;
     font-family: 'Playfair Display', serif;
     font-family: 'PT Sans', sans-serif;
+
 }
 
 /*------------------------------------ header part style start--------------------- */
@@ -54,7 +55,7 @@ body {
 }
 
 .player-pic img {
-    width: 400px;
+    width: 100%;
 }
 
 
@@ -63,9 +64,8 @@ body {
 #main {
     width: 80%;
     margin: 100px auto;
-    display: flex;
-    /* display: grid;
-    grid-template-columns: 1fr 3fr; */
+    display: grid;
+    grid-template-columns: 1fr 3fr;
 }
 
 /* left side start */
@@ -208,8 +208,19 @@ footer h1 {
     font-size: 30px;
 }
 
-footer .sosail ul {
-    margin-top: 1px;
+footer .sosail li a .fa-facebook,
+.fa-youtube {
+    color: white;
+    background-color: skyblue;
+    padding: 5px;
+    margin-right: 5px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.fa-youtube {
+    background-color: red;
 }
 
 /* responsive */
@@ -252,6 +263,20 @@ footer .sosail ul {
         border-radius: 10px;
     }
 
+    .left-side ul .upcomming {
+        background-color: red;
+        color: white;
+    }
+
+    .left-side ul .other-color {
+        background-color: white;
+        color: black;
+    }
+
+    .left-side ul .other-color a {
+        color: black;
+    }
+
     .left-side ul li {
         margin: 20px;
         width: 300px;
@@ -260,7 +285,6 @@ footer .sosail ul {
 
     .right-side {
         display: grid;
-
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -315,6 +339,27 @@ footer .sosail ul {
         margin: 0 auto;
     }
 
+    .player-info>h2 {
+        padding: 10px;
+        font-size: 50px;
+    }
+
+    .left-side ul .upcomming {
+        background-color: red;
+    }
+
+    .left-side ul .upcomming a {
+        color: white;
+    }
+
+    .left-side ul .other-color {
+        background-color: white;
+    }
+
+    .left-side ul .other-color a {
+        color: black;
+    }
+
     #main {
         width: 100%;
         display: block;
@@ -330,9 +375,7 @@ footer .sosail ul {
 
     .left-side ul {
         background-color: white;
-
         width: 100%;
-
         border-radius: 10px;
     }
 
